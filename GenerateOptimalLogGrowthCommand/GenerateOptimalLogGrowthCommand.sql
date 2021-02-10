@@ -40,7 +40,7 @@ begin
     begin
 
         set @Details
-            = N'Log Size:' + cast(@currentsize as varchar(100))
+            = N'--Log Size:' + cast(@currentsize as varchar(100))
               + N' | VLFSizeThisIteration: ' + cast(@VLFSize as varchar(100)) + 'MB'
 			  + N' | TotalVLFs: ' + cast(@TotalVLFs as varchar(100))
               + N' | Increment:' + cast(@incrementsize as varchar(100)) + 'MB'
